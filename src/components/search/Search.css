@@ -1,0 +1,11 @@
+.search-container {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+}
+
+.search {
+  padding-left: 20px;
+}

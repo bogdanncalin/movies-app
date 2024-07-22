@@ -1,0 +1,98 @@
+import { Movie } from "./models";
+
+const resolution = "300/200";
+
+export const movies = [
+  new Movie(
+    "The Adventure Begins",
+    `https://picsum.photos/id/301/${resolution}`,
+    1990,
+    "PG",
+    "Movie",
+    false,
+    true,
+  ),
+  new Movie(
+    "Mystery of the Lost City",
+    `https://picsum.photos/id/305/${resolution}`,
+    1991,
+    "PG",
+    "Movie",
+    false,
+    false,
+  ),
+  new Movie(
+    "Journey to the Unknown",
+    `https://picsum.photos/id/204/${resolution}`,
+    1992,
+    "PG",
+    "Movie",
+    false,
+    true,
+  ),
+  new Movie(
+    "Escape from Reality",
+    `https://picsum.photos/id/305/${resolution}`,
+    1993,
+    "PG",
+    "Movie",
+    false,
+    false,
+  ),
+  new Movie(
+    "The Last Frontier",
+    `https://picsum.photos/id/436/${resolution}`,
+    1994,
+    "PG",
+    "Movie",
+    false,
+    false,
+  ),
+  new Movie(
+    "Echoes of the Past",
+    `https://picsum.photos/id/567/${resolution}`,
+    1995,
+    "PG",
+    "Movie",
+    false,
+    false,
+  ),
+  new Movie(
+    "Beyond the Horizon",
+    `https://picsum.photos/id/678/${resolution}`,
+    1996,
+    "PG",
+    "Movie",
+    false,
+    true,
+  ),
+  new Movie(
+    "Whispers in the Dark",
+    `https://picsum.photos/id/789/${resolution}`,
+    1997,
+    "PG",
+    "Movie",
+    false,
+    false,
+  ),
+  new Movie(
+    "Legends Never Die",
+    `https://picsum.photos/id/890/${resolution}`,
+    1998,
+    "PG",
+    "Movie",
+    false,
+    true,
+  ),
+  new Movie(
+    "Timeless Memories",
+    `https://picsum.photos/id/901/${resolution}`,
+    1999,
+    "PG",
+    "Movie",
+    false,
+    true,
+  ),
+];
+
+export const trendingMovies = movies.filter(({ trending })=> trending);
