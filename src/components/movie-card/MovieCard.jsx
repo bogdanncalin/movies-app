@@ -4,17 +4,22 @@ import "./MovieCard.css";
 function MovieCard(props) {
   const { movie, large = false } = props; // default value of large is false
   return (
-    <li className={`movie ${large ? 'movie--large' : 'movie--small'}`} key={movie.id}>
+    <li
+      className={`movie ${large ? "movie--large" : "movie--small"}`}
+      key={movie.id}
+    >
       <img className="movie__image" src={movie.imageUrl} />
-      <div className="description">
-        <span className="movie__year">{movie.year}</span>
-        <span className="movie__rating">{movie.rating}</span>
-        <span className="movie__category">{movie.category}</span>
-      </div>
       <div className="movie__bookmark">
         <i className="movie__bookmark-icon" />
       </div>
-      <h3 className="movie__title">{movie.title}</h3>
+      <div className = "movie_info">
+        <div className="description">
+          <span className="movie__year">{movie.year}</span>
+          <span className="movie__rating">{movie.rating}</span>
+          <span className="movie__category">{movie.category}</span>
+        </div>
+        <h3 className="movie__title">{movie.title}</h3>
+      </div>
     </li>
   );
 }

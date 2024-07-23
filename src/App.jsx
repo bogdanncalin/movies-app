@@ -1,27 +1,23 @@
-import Navbar from "./components/navbar/Navbar";
-import Search from "./components/search/Search";
-import Carousel from "./components/carousel/Carousel";
-import Recommended from "./components/recommended/Recommended";
 import "./App.css";
-import { useState } from "react";
+import Home from "./components/home/home";
+import MovieDetails from "./components/movie-details/MovieDetails";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  const [searchTerm, setSearchTerm] = useState();
-
-  function onSearchChange(_searchTerm) {
-    setSearchTerm(_searchTerm); // equivalent to searchTerm = _searchTerm, but on react terms;
-  }
-
   return (
     // React fragment -> can also be used as React.Fragment to encapsulate all the siblings components
     // <React.fragment> ... </React.Fragment>, import React from 'react'
     // or <main> and </main>, but it might mess the structure and the css files
 
+    // <Route path="/movie/:id" element={<Home />}></Route>, the : means that "id" is gonna be a variable, not something static, like a string
     <>
-      <Navbar />
-      <Search onSearchChange={onSearchChange} />
-      <Carousel />
-      <Recommended searchTerm={searchTerm} />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/movie/:id" element={<MovieDetails />}></Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

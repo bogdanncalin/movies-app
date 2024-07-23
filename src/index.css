@@ -1,0 +1,23 @@
+:root{
+    --primary-color: rgb(16 20 3);
+    --grey-light: rgb(204 209 216);
+}
+body{
+    background-color: var(--primary-color);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input{
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--grey-light)
+}
+
+input:active{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, span{
+    color: var(--grey-light)
+}
+ 

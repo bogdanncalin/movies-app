@@ -1,20 +1,32 @@
-.movie--large .movie__image{
-    width: 350px;
+.movie--large .movie__image {
+  width: 350px;
 }
 
-.movie__image{
-    border-radius: 10px;
+.movie--large {
+  position: relative;
 }
 
-.movie__title{
-    margin: 0;
-    font-size: 1rem;
+.movie--large .movie_info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
 
-.movie__year, .movie__rating, .movie__category{
-    margin-right: 1rem;
+.movie__image {
+  border-radius: 10px;
 }
 
-span{
-    font-size: .9rem;
+.movie__title {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.movie__year,
+.movie__rating,
+.movie__category {
+  margin-right: 1rem;
+}
+
+span {
+  font-size: 0.9rem;
 }

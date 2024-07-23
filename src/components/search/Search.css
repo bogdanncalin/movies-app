@@ -4,8 +4,10 @@
 
 .search-icon {
   position: absolute;
+  stroke: white;
 }
 
 .search {
   padding-left: 20px;
+  width: 600px;
 }

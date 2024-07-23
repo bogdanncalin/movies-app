@@ -2,6 +2,7 @@ import { movies } from "../../data/data";
 import "./Recommended.css";
 import MovieCard from "../movie-card/MovieCard";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 function Recommended(props) {
   const { searchTerm = "" } = props;
@@ -22,7 +23,9 @@ function Recommended(props) {
       ) : (
         <ul className="movie-list">
           {filteredMovies.map((movie) => (
-            <MovieCard movie={movie} key={movie.id} />
+            <Link key={movie.id} to={`/movie/${movie.id}`}>
+              <MovieCard movie={movie} />
+            </Link>
           ))}
         </ul>
       )}
