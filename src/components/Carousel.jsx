@@ -1,12 +1,14 @@
-import MovieCard from '../components/MovieCard';
+import { MovieContext } from "../App";
+import MovieCard from "../components/MovieCard";
 
-import './Carousel.css';
+import "./Carousel.css";
 
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
+import { useContext } from "react";
 
-
-function Carousel({ movies }) {
-   const trendingMovies = movies.filter(({ trending }) => trending);
+function Carousel() {
+  const { movies } = useContext(MovieContext);
+  const trendingMovies = movies.filter(({ trending }) => trending);
 
   return (
     <ul className="trending">

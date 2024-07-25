@@ -1,9 +1,10 @@
+import { MovieContext } from "../../App";
 import Carousel from "../Carousel";
 import Navbar from "../Navbar";
 import Recommended from "../recommended/Recommended";
 import Search from "../search/Search";
-
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
+import { useContext } from "react";
 
 // Version 1
 // function retrieveMovies() {
@@ -22,7 +23,8 @@ async function retrieveMovies(setMovies) {
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
-  const [movies, setMovies] = useState([]);
+  // const [movies, setMovies] = useState([]);
+  const { setMovies } = useContext(MovieContext);
 
   function onSearchChange(_searchTerm) {
     // searchTerm = _searchTerm
@@ -50,8 +52,8 @@ export default function Home() {
       <Navbar></Navbar>
       <Search onSearchChange={onSearchChange} />
       <section>
-        <Carousel movies={movies} />
-        <Recommended movies={movies} searchTerm={searchTerm} />
+        <Carousel />
+        <Recommended searchTerm={searchTerm} />
       </section>
     </>
   );
