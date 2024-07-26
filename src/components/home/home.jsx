@@ -1,6 +1,5 @@
 import { MovieContext } from "../../App";
 import Carousel from "../Carousel";
-import Navbar from "../Navbar";
 import Recommended from "../recommended/Recommended";
 import Search from "../search/Search";
 import { useState, useEffect } from "react";
@@ -49,7 +48,6 @@ export default function Home() {
 
   return (
     <>
-      <Navbar></Navbar>
       <Search onSearchChange={onSearchChange} />
       <section>
         <Carousel />

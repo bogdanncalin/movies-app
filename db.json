@@ -109,6 +109,22 @@
       "category": "Movie",
       "bookmark": false,
       "trending": false
+    },
+    {
+      "id": "76bb",
+      "title": "movie",
+      "imageUrl": "https://picsum.photos/id/192/400/300",
+      "year": "2003",
+      "rating": "pg",
+      "category": "series"
+    },
+    {
+      "id": "c56e",
+      "title": "test",
+      "imageUrl": "https://picsum.photos/id/198/400/300",
+      "year": "1928",
+      "rating": "18+",
+      "category": "movie"
     }
   ]
 }

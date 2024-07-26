@@ -1,15 +1,35 @@
+import { useNavigate } from "react-router-dom";
 import "./CreateMovie.css";
 
 export default function CreateMovie() {
-    function saveMovie(){
-        console.log('save');
-    }
+  const navigate = useNavigate();
+  function saveMovie(event) {
+    event.preventDefault(); // used not to refresh the whole page/app on submit, because default behaviour on submit is to refresh the whole page
+
+    const { title, url, year, rating, category } = event.target;
+
+    const movie = {
+      title: title.value,
+      imageUrl: url.value,
+      year: year.value,
+      rating: rating.value,
+      category: category.value,
+    };
+
+    fetch("http://localhost:3000/movies", {
+      method: "POST",
+      body: JSON.stringify(movie),
+    }).then(() => navigate("/"));
+
+    event.target.reset(); // empties the form after submition
+  }
 
   return (
-    <form onSubmit={saveMovie()}>
+    <form onSubmit={saveMovie}>
       <fieldset>
         <label htmlFor="title">Title</label>
         <input
+          name="title"
           className="form-input"
           id="title"
           type="text"
@@ -20,6 +40,7 @@ export default function CreateMovie() {
       <fieldset>
         <label htmlFor="imageURL">Image URL:</label>
         <input
+          name="url"
           className="form-input"
           id="imageURL"
           type="url"
@@ -30,6 +51,7 @@ export default function CreateMovie() {
       <fieldset>
         <label htmlFor="year">Year</label>
         <input
+          name="year"
           className="form-input"
           id="year"
           type="number"
@@ -39,7 +61,7 @@ export default function CreateMovie() {
       </fieldset>
       <fieldset>
         <label htmlFor="rating">Rating</label>
-        <select id="rating" required>
+        <select name="rating" id="rating" required>
           <option disabled>Select one</option>
           <option value="pg">PG</option>
           <option value="18+">18+</option>

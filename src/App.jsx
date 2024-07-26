@@ -7,6 +7,7 @@ import MovieDetails from "./components/movie-details/MovieDetails";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import CreateMovie from "./components/create-movie/CreateMovie";
+import Navbar from "./components/Navbar";
 
 export const MovieContext = React.createContext();
 
@@ -17,6 +18,7 @@ function App() {
     // React fragment -> Can also be used as React.Fragment
     <MovieContext.Provider value={{ movies, setMovies }}>
       <BrowserRouter>
+        <Navbar></Navbar>
         {/* Switch statement */}
         <Routes>
           <Route path="/" element={<Home />}></Route>

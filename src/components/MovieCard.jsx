@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-import './MovieCard.css';
+import "./MovieCard.css";
 
 // function MovieCard(props) {
 // const { movie, wili, key } = props;
@@ -14,7 +14,7 @@ function MovieCard({ movieElement, large = false }) {
         <i className="movie__bookmark-icon" />
       </div>
 
-      <div className='movie__info'>
+      <div className="movie__info">
         <div>
           <span className="movie__year">{year}</span>
           <span className="movie__rating">{rating}</span>
@@ -34,7 +34,7 @@ MovieCard.propTypes = {
   movieElement: PropTypes.shape({
     id: PropTypes.string,
     imageUrl: PropTypes.string,
-    year: PropTypes.number,
+    year: PropTypes.any,
     rating: PropTypes.string,
     category: PropTypes.string,
     title: PropTypes.string,
