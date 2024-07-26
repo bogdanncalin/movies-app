@@ -1,36 +1,6 @@
 {
   "movies": [
     {
-      "id": "b9f95a69-9698-404a-85ed-527e845fc09e",
-      "title": "The great lands",
-      "imageUrl": "https://picsum.photos/id/237/400/300",
-      "year": 1993,
-      "rating": "PG",
-      "category": "Movie",
-      "bookmark": false,
-      "trending": true
-    },
-    {
-      "id": "7f621d63-4f65-459c-bb7f-5206ef7cf9c7",
-      "title": "The great lands",
-      "imageUrl": "https://picsum.photos/id/200/400/300",
-      "year": 1993,
-      "rating": "PG",
-      "category": "Movie",
-      "bookmark": false,
-      "trending": true
-    },
-    {
-      "id": "a30767cc-0996-4b48-aa49-e1373c08c177",
-      "title": "The great lands",
-      "imageUrl": "https://picsum.photos/id/100/400/300",
-      "year": 1993,
-      "rating": "PG",
-      "category": "Movie",
-      "bookmark": false,
-      "trending": true
-    },
-    {
       "id": "474ab55b-94e5-480c-9a57-47581ef225dd",
       "title": "The great lands",
       "imageUrl": "https://picsum.photos/id/120/400/300",
@@ -81,16 +51,6 @@
       "trending": false
     },
     {
-      "id": "45194c75-48ec-4cc3-be24-34e628ac1ce1",
-      "title": "The great lands",
-      "imageUrl": "https://picsum.photos/id/21/400/300",
-      "year": 1993,
-      "rating": "PG",
-      "category": "Movie",
-      "bookmark": false,
-      "trending": false
-    },
-    {
       "id": "80d21417-54cf-4f94-8554-07a70d2b2b31",
       "title": "The great lands",
       "imageUrl": "https://picsum.photos/id/23/400/300",
@@ -117,14 +77,6 @@
       "year": "2003",
       "rating": "pg",
       "category": "series"
-    },
-    {
-      "id": "c56e",
-      "title": "test",
-      "imageUrl": "https://picsum.photos/id/198/400/300",
-      "year": "1928",
-      "rating": "18+",
-      "category": "movie"
     }
   ]
 }

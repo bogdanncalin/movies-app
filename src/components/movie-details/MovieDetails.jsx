@@ -22,10 +22,10 @@ export default function MovieDetails() {
   }, []);
 
   useEffect(() => {
-    if(!movie) {
-      navigate('/');
+    if (!movie) {
+      navigate("/");
     }
-  }, [movie])
+  }, [movie]);
 
   if (!movie) {
     return;
@@ -34,7 +34,19 @@ export default function MovieDetails() {
     // )
   }
 
-  const { title, imageUrl, category } = movie;
+  const { title, imageUrl, category, id } = movie;
+
+  function deleteMovie() {
+    const userConfirmedAction = confirm(
+      "Are you sure you want to delete this movie?"
+    );
+    if (userConfirmedAction) {
+      fetch(`http://localhost:3000/movies/${id}`, { method: "DELETE" }).then(
+        () => navigate("/"),
+        alert("The movie has been deleted succesfully!")
+      );
+    }
+  }
 
   return (
     <section>
@@ -45,13 +57,16 @@ export default function MovieDetails() {
       <img src={imageUrl} />
 
       <p className="movie-detail__category"> Category: {category}</p>
+      <button onClick={deleteMovie}>Delete movie</button>
     </section>
   );
 }
 
-
 /**
  *! REST -> Representational State Transfer
- *! Get a list of all resources (ex: movies) GET: /movies 
+ *! Get a list of all resources (ex: movies) GET: /movies
  *! Get a single a single resource from the server: GET: /movies/:id
+
+  delete one entity:
+  DELETE /movies/:id
  */
