@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <ul>
       <li>
-        <Link to="/createMovie">Create Movie</Link>
+        <Link to="/create-movie">Create Movie</Link>
       </li>
       <li>
         <Link to="/">Movie List</Link>

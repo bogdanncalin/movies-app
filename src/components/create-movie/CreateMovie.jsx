@@ -1,8 +1,15 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import "./CreateMovie.css";
+import { useContext } from "react";
+import { MovieContext } from "../../App";
 
 export default function CreateMovie() {
   const navigate = useNavigate();
+  const { movies } = useContext(MovieContext);
+  const { idFromPath } = useParams();
+
+  const selectedMovie = movies.find((movie) => movie.id === idFromPath);
+
   function saveMovie(event) {
     event.preventDefault(); // used not to refresh the whole page/app on submit, because default behaviour on submit is to refresh the whole page
 
@@ -16,10 +23,23 @@ export default function CreateMovie() {
       category: category.value,
     };
 
-    fetch("http://localhost:3000/movies", {
-      method: "POST",
-      body: JSON.stringify(movie),
-    }).then(() => navigate("/"));
+    if (idFromPath) {
+      fetch(`http://localhost:3000/movies/${idFromPath}`, {
+        method: "PUT",
+        body: JSON.stringify(movie),
+      }).then(() => {
+        alert("Movie has been modified");
+        navigate("/");
+      });
+    } else {
+      fetch("http://localhost:3000/movies", {
+        method: "POST",
+        body: JSON.stringify(movie),
+      }).then(() => {
+        alert("Movie has been created");
+        navigate("/");
+      });
+    }
 
     event.target.reset(); // empties the form after submition
   }
@@ -35,6 +55,7 @@ export default function CreateMovie() {
           type="text"
           required
           minLength={3}
+          defaultValue={selectedMovie?.title} // checks to see if selectedMovie exists
         />
       </fieldset>
       <fieldset>
@@ -46,6 +67,7 @@ export default function CreateMovie() {
           type="url"
           required
           minLength={3}
+          defaultValue={selectedMovie?.imageUrl}
         />
       </fieldset>
       <fieldset>
@@ -57,11 +79,17 @@ export default function CreateMovie() {
           type="number"
           required
           minLength={4}
+          defaultValue={selectedMovie?.year}
         />
       </fieldset>
       <fieldset>
         <label htmlFor="rating">Rating</label>
-        <select name="rating" id="rating" required>
+        <select
+          name="rating"
+          id="rating"
+          required
+          defaultValue={selectedMovie?.rating}
+        >
           <option disabled>Select one</option>
           <option value="pg">PG</option>
           <option value="18+">18+</option>
@@ -78,6 +106,7 @@ export default function CreateMovie() {
             type="radio"
             value="movie"
             required
+            defaultChecked={selectedMovie?.category.toLowerCase() === "movie"}
           />
         </div>
         <div>
@@ -88,6 +117,7 @@ export default function CreateMovie() {
             type="radio"
             value="series"
             required
+            defaultChecked={selectedMovie?.category.toLowerCase() == "series"}
           />
         </div>
       </fieldset>
