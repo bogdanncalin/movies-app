@@ -1,7 +1,9 @@
 # React + Vite App for registering your favourite movies and tv series
+**work in progress**
 
-# Instalation: npm install
+# Instalation
+npm install
 
-# START:
+# START
 npm run dev
 npm run server
