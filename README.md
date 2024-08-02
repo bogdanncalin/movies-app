@@ -9,7 +9,7 @@ npm run dev <br>
 npm run server
 
 # Tech Stack
-FRONTEND: React
-DATABASE: express + json-server
-AUTHENTICATION: json-server-auth
-BUILD: vite
+FRONTEND: React <br>
+DATABASE: express + json-server <br>
+AUTHENTICATION: json-server-auth <br>
+BUILD: vite <br>
