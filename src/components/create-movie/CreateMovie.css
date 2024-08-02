@@ -2,11 +2,11 @@ label {
   color: white;
 }
 
-fieldset{
-    border: none;
+fieldset {
+  border: none;
 }
 
-.form-input{
-    border: 1px solid white;
-    color: white;
+input {
+  border: 1px solid white;
+  color: white;
 }

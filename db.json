@@ -1,4 +1,12 @@
 {
+  "users": [
+    {
+      "email": "test@test.com",
+      "password": "$2a$10$.2nX.FmY100FK5Dd4JSt0uPWEczTXRE9XzLAlItGzrUW6bJHH4mAq",
+      "username": "test",
+      "id": 1
+    }
+  ],
   "movies": [
     {
       "title": "Calculatoare",
@@ -140,6 +148,5 @@
       "rating": "pg",
       "category": "movie"
     }
-  ],
-  "users": []
+  ]
 }

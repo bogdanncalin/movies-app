@@ -9,6 +9,7 @@ import { useState } from "react";
 import CreateMovie from "./components/create-movie/CreateMovie";
 import Navbar from "./components/Navbar";
 import retrieveMovies from "./lib/movies";
+import { Register } from "./components/auth/register/Register";
 
 export const MovieContext = React.createContext();
 
@@ -34,7 +35,8 @@ function App() {
           <Route
             path="/edit-movie/:idFromPath"
             element={<CreateMovie />}
-          ></Route>
+          ></Route> 
+          <Route path='/register' element={<Register  /> }></Route>
         </Routes>
       </BrowserRouter>
     </MovieContext.Provider>
