@@ -1,5 +1,6 @@
 import { HiOutlineSearch } from "react-icons/hi";
 import PropTypes from 'prop-types';
+// import '../../components/App.css';
 
 import './Search.css';
 

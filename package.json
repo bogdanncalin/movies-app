@@ -13,12 +13,14 @@
     "server": "npx json-server-auth db.json -r routes.json"
   },
   "dependencies": {
+    "daisyui": "^4.12.10",
     "express": "^4.19.2",
     "json-server": "^0.17.3",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
+    "react-multi-carousel": "^2.8.5",
     "react-router-dom": "^6.22.3",
     "uuid": "^9.0.1"
   },
@@ -26,11 +28,14 @@
     "@types/react": "^18.2.64",
     "@types/react-dom": "^18.2.21",
     "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.20",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.34.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "json-server-auth": "^2.1.0",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.7",
     "vite": "^5.1.6"
   }
 }

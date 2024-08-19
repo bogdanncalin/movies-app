@@ -19,7 +19,7 @@ export default function MovieDetails() {
   // const selectedMovie = movies.find((movie) => movie.id === idFromPath);
   const navigate = useNavigate();
 
-  const { movies, setMovies } = useContext(MovieContext);
+  const { setMovies } = useContext(MovieContext);
 
   useEffect(() => {
     retrieveMovie(setMovie, idFromPath);

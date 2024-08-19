@@ -5,6 +5,24 @@
       "password": "$2a$10$.2nX.FmY100FK5Dd4JSt0uPWEczTXRE9XzLAlItGzrUW6bJHH4mAq",
       "username": "test",
       "id": 1
+    },
+    {
+      "email": "hello@world.com",
+      "password": "$2a$10$ILl7zfi6nWIXl5gjb0DTIOLtfKhHmStIofKgCz03LXi2S5qzomcz6",
+      "username": "helloworld",
+      "id": 2
+    },
+    {
+      "email": "testy@test.com",
+      "password": "$2a$10$YX4XYrvEDLes.CD0c1/YhuAnDp7f5P3cLL64zTRIF7roVRZfmGAdm",
+      "username": "testy",
+      "id": 3
+    },
+    {
+      "email": "tester@test.com",
+      "password": "$2a$10$KYkqTLmYWljmTA2DFwgU.O2tSqzv1s0br6bdwfFr8Ey7OSQ/akzmW",
+      "username": "tester",
+      "id": 4
     }
   ],
   "movies": [
@@ -14,7 +32,8 @@
       "year": "1993",
       "rating": "pg",
       "category": "movie",
-      "id": "b6aa03d1-0ca9-44ac-aabf-c084b0e500fd"
+      "id": "b6aa03d1-0ca9-44ac-aabf-c084b0e500fd",
+      "trending": false
     },
     {
       "title": "Padure",
@@ -22,7 +41,8 @@
       "year": "1993",
       "rating": "pg",
       "category": "movie",
-      "id": "fc02cae2-f187-4ac0-8a15-32a6495bceb3"
+      "id": "fc02cae2-f187-4ac0-8a15-32a6495bceb3",
+      "trending": true
     },
     {
       "id": "80d21417-54cf-4f94-8554-07a70d2b2b31",
@@ -32,7 +52,7 @@
       "rating": "PG",
       "category": "Movie",
       "bookmark": false,
-      "trending": false
+      "trending": true
     },
     {
       "id": "5e507f3c-2534-45bb-8311-6d8920b975f7",
@@ -50,7 +70,8 @@
       "imageUrl": "https://picsum.photos/id/192/400/300",
       "year": "2003",
       "rating": "pg",
-      "category": "series"
+      "category": "series",
+      "trending": true
     },
     {
       "id": "541c",
@@ -58,7 +79,8 @@
       "imageUrl": "https://picsum.photos/id/60/400/300",
       "year": "1993",
       "rating": "18+",
-      "category": "series"
+      "category": "series",
+      "trending": false
     },
     {
       "id": "6597",
@@ -66,7 +88,8 @@
       "imageUrl": "https://picsum.photos/id/60/400/300",
       "year": "1993",
       "rating": "pg",
-      "category": "movie"
+      "category": "movie",
+      "trending": true
     },
     {
       "id": "6ff4",
@@ -74,7 +97,8 @@
       "imageUrl": "https://picsum.photos/id/60/400/300",
       "year": "1998",
       "rating": "pg",
-      "category": "movie"
+      "category": "movie",
+      "trending": false
     },
     {
       "id": "6c10",
@@ -82,7 +106,8 @@
       "imageUrl": "https://picsum.photos/id/60/400/300",
       "year": "1",
       "rating": "pg",
-      "category": "movie"
+      "category": "movie",
+      "trending": true
     },
     {
       "id": "0c2d",
@@ -90,7 +115,8 @@
       "imageUrl": "https://picsum.photos/id/60/400/300",
       "year": "6",
       "rating": "pg",
-      "category": "movie"
+      "category": "movie",
+      "trending": false
     },
     {
       "id": "7cf0",
@@ -98,7 +124,8 @@
       "imageUrl": "https://picsum.photos/id/192/400/300",
       "year": "2003",
       "rating": "pg",
-      "category": "series"
+      "category": "series",
+      "trending": true
     },
     {
       "id": "6176",
@@ -106,7 +133,8 @@
       "imageUrl": "https://picsum.photos/id/90/400/300",
       "year": "1993",
       "rating": "pg",
-      "category": "movie"
+      "category": "movie",
+      "trending": false
     },
     {
       "id": "f2ca",
@@ -114,7 +142,8 @@
       "imageUrl": "https://picsum.photos/id/90/400/300",
       "year": "1993",
       "rating": "pg",
-      "category": "movie"
+      "category": "movie",
+      "trending": true
     },
     {
       "id": "14b7",
@@ -122,7 +151,8 @@
       "imageUrl": "https://picsum.photos/id/80/400/300",
       "year": "1993",
       "rating": "pg",
-      "category": "series"
+      "category": "series",
+      "trending": false
     },
     {
       "id": "4cb3",
@@ -130,7 +160,8 @@
       "imageUrl": "https://picsum.photos/id/60/400/300",
       "year": "1",
       "rating": "pg",
-      "category": "movie"
+      "category": "movie",
+      "trending": true
     },
     {
       "id": "a8ba",
@@ -138,7 +169,8 @@
       "imageUrl": "https://picsum.photos/id/192/400/300",
       "year": "2003",
       "rating": "pg",
-      "category": "series"
+      "category": "series",
+      "trending": false
     },
     {
       "id": "0d79",
@@ -146,7 +178,8 @@
       "imageUrl": "https://picsum.photos/id/60/400/300",
       "year": "1234",
       "rating": "pg",
-      "category": "movie"
+      "category": "movie",
+      "trending": true
     }
   ]
 }

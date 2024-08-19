@@ -1,13 +1,29 @@
 .search-container {
   position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-container input:focus{
+  outline: none;
 }
 
 .search-icon {
   position: absolute;
-  stroke: white;
+  stroke: var(--dark-gray);
 }
 
 .search {
   padding-left: 20px;
   width: 300px;
+  background-color: var(--dark-blue);
+  border: none;
+  border-bottom: solid var(--dark-gray);
+  color: var(--light-gray)
+}
+
+.search::placeholder{
+  color: var(--sky-blue);
+  font-weight: 1;
+  letter-spacing: 0.1rem;
 }

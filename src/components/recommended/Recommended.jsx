@@ -1,8 +1,6 @@
-import MovieCard from "../MovieCard";
+import MovieCard from "../movie-card/MovieCard";
 
 import PropTypes from "prop-types";
-
-import { Link } from "react-router-dom";
 
 import "./Recommended.css";
 import { MovieContext } from "../../App";
@@ -18,19 +16,12 @@ function Recommended({ searchTerm }) {
 
   return (
     <section>
-      <header>
-        <h1>Recommended for you</h1>
-      </header>
-
       {moviesNotFound ? (
         <p>404 There were no movies found for the given search input.</p>
       ) : (
         <ul className="movie-list">
           {filteredMovies.map((movieItem) => (
-            // Link === <a href="/movie/${movieItem.id}"
-            <Link key={movieItem.id} to={`/movie/${movieItem.id}`}>
-              <MovieCard movieElement={movieItem} wili="hello" />
-            </Link>
+            <MovieCard key={movieItem.id} movieElement={movieItem} />
           ))}
         </ul>
       )}

@@ -1,7 +1,20 @@
-.red {
-  color: red;
-}
-
-.blue {
-  color: blue;
+:root {
+  /* Primary Colors */
+  --primary-blue: #007bff; /* Bright blue, often used for primary buttons */
+  --dark-blue: #0056b3;    /* Darker blue for hover states or accents */
+  --light-blue: #e0f7ff;   /* Light blue for backgrounds or highlights */
+  
+  /* Secondary Colors */
+  --sky-blue: #87ceeb;     /* Sky blue, softer and lighter */
+  --steel-blue: #4682b4;   /* Steel blue, a bit grayish and muted */
+  
+  /* Neutral Colors */
+  --white: #ffffff;        /* White for text or backgrounds */
+  --light-gray: #f5f5f5;   /* Light gray for backgrounds or borders */
+  --gray: #6c757d;         /* Gray for text or subtle elements */
+  --dark-gray: #343a40;    /* Dark gray for text or borders */
+  
+  /* Accent Colors */
+  --cyan: #00bcd4;         /* Cyan for accents or call-to-action elements */
+  --navy: #001f3f;         /* Navy blue for strong contrast or emphasis */
 }

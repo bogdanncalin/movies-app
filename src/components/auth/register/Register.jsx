@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
+
 export function Register() {
   function register(event) {
     event.preventDefault(); // prevents refreshing, because it is a single page application
-
+    const navigate = useNavigate;
     const formElement = event.target;
     const { email, username, password, reTypePassword } = formElement;
 
@@ -28,8 +30,8 @@ export function Register() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(user),
-    }).then((response) => {
-      console.log(response);
+    }).then(() => {
+      navigate("/login");
     });
   }
   return (

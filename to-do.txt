@@ -1,0 +1,22 @@
+Fix the problem with unauthorized error
+
+Instead of showing carousel with the trending movies, 
+make it show your movies (the ones you have in bookmark)
+
+Create the go back to the top button
+
+CSS
+
+Create a page to show when you are not logged in like on https://www.tvtime.com/
+
+Create the footer
+
+Create the navbar dropdown pages for TV-Shows (Trending, Most added, Most watched, 
+Most binged) (example: https://www.tvtime.com/discover/shows/trending)
+Create the navbar dropdown pages for Movies (Trending, Most added)
+Create the genres dropdown pages (all genres)
+
+Create a chatbot that helps you choose movies and tvseries based on what you like 
+(use chatgpt to help you with that)
+
+Create the profile page
