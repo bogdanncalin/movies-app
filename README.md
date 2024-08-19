@@ -1,16 +1,15 @@
-# React + Vite
+# React App for saving your favourite movies and tv series
+**work in progress**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Instalation
+npm install
 
-Currently, two official plugins are available:
+# START
+npm run dev <br>
+npm run server
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-# Versioning schema
-0.0.0
-main.secondary.patch
-
-Main: Can have breaking changes.
-Secondary: Additional features.
-Patch: Bugfixes.
+# Tech Stack
+FRONTEND: React <br>
+DATABASE: express + json-server <br>
+AUTHENTICATION: json-server-auth <br>
+BUILD: vite <br>
