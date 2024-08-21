@@ -43,7 +43,7 @@ export default function Login() {
       localStorage.setItem("accessToken", JWToken);
       localStorage.setItem("user", JSON.stringify(userDetails)); // Store user info
 
-      setAuth({ token: JWToken, user: userDetails });
+      setAuth({ token: JWToken });
       navigate("/");
     } catch (error) {
       console.error("Error during login:", error);

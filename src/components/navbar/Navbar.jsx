@@ -14,7 +14,7 @@ function Navbar() {
   const profileRef = useRef(null);
   const nameRef = useRef(null);
   const logoutButtonRef = useRef(null);
-  const user = JSON.parse(localStorage.getItem("user"));
+  const user = JSON.parse(localStorage.getItem("user")) || {};
 
   const { setSearchTerm } = useContext(SearchTermContext);
 
@@ -24,7 +24,12 @@ function Navbar() {
 
   const logout = () => {
     localStorage.removeItem("accessToken");
+    localStorage.removeItem("user"); // Ensure user data is also cleared if needed
+    // Optionally, you can force a re-render to update the visibility:
+    console.log("Logging out..."); // Check if logout is triggered
+    setTimeout(() => navigate("/"), 0);
     navigate("/");
+    console.log("Navigated to home page."); // Confirm navigation
   };
 
   const onSearchChange = (_searchTerm) => {
@@ -46,7 +51,7 @@ function Navbar() {
       <div className="functions">
         <Search onSearchChange={onSearchChange} />
         <h2 className="name" ref={nameRef}>
-          Hi, {user.username}!
+          Hi, {user?.username}!
         </h2>
         <Link to="/profile">
           <button ref={profileRef}>Profile</button>

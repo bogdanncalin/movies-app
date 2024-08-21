@@ -26,25 +26,7 @@ const ToggleVisibility = ({
     }
 
     // Optional: Handle token changes
-    const intervalId = setInterval(() => {
-      const currentToken = localStorage.getItem("accessToken");
-      if (currentToken) {
-        loginButtonRef.current.style.display = "none";
-        registerButtonRef.current.style.display = "none";
-        profileRef.current.style.display = "block";
-        nameRef.current.style.display = "block";
-        logoutButtonRef.current.style.display = "block";
-      } else {
-        loginButtonRef.current.style.display = "block";
-        registerButtonRef.current.style.display = "block";
-        profileRef.current.style.display = "none";
-        nameRef.current.style.display = "none";
-        logoutButtonRef.current.style.display = "none";
-      }
-    }, 1000);
-
-    return () => clearInterval(intervalId);
-  }, [loginButtonRef, registerButtonRef, profileRef, nameRef]);
+  }, [loginButtonRef, registerButtonRef, profileRef, nameRef, logoutButtonRef]);
 
   return null; // This component doesn’t render anything
 };
