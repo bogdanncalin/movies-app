@@ -1,24 +1,17 @@
-// movies.js
-export default async function retrieveMovies(setMovies, accessToken) {
-  console.trace("retrieveMovies called with accessToken:", accessToken);
 
-  if (!accessToken) {
-    console.error("Access token is missing");
-    return;
+export default async function retrieveMovies(setMovies, accessToken, navigate) {
+  const response = await fetch("http://localhost:3000/movies", {
+    headers: {
+      Authorization: `Bearer ${accessToken}`,
+    },
+  });
+  const moviesFromServer = await response.json();
+
+  if (response.ok) {
+    setMovies(moviesFromServer);
   }
 
-  try {
-    const response = await fetch("http://localhost:3000/movies", {
-      headers: {
-        authorization: `Bearer ${accessToken}`,
-      },
-    });
-
-    if (response.ok) {
-      const moviesFromServer = await response.json();
-      setMovies(moviesFromServer);
-    }
-  } catch (error) {
-    console.error("Error retrieving movies:", error);
+  if (response.status === 401) {
+    navigate("/login");
   }
 }

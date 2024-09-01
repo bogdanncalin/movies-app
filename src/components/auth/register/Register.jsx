@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
 
 export function Register() {
+  const navigate = useNavigate();
   function register(event) {
     event.preventDefault(); // prevents refreshing, because it is a single page application
-    const navigate = useNavigate;
     const formElement = event.target;
     const { email, username, password, reTypePassword } = formElement;
 

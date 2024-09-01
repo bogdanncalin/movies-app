@@ -1,3 +1,7 @@
+Learn more about fetch api (https://www.youtube.com/watch?v=cuEtnrL9-H0) and (https://www.youtube.com/watch?v=ubw2hdQIl4E)
+
+Get the old app.jsx from willi, the one which was working ok
+
 Fix the problem with unauthorized error
 
 Instead of showing carousel with the trending movies, 

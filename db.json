@@ -23,6 +23,18 @@
       "password": "$2a$10$KYkqTLmYWljmTA2DFwgU.O2tSqzv1s0br6bdwfFr8Ey7OSQ/akzmW",
       "username": "tester",
       "id": 4
+    },
+    {
+      "email": "testyy@test.com",
+      "password": "$2a$10$FjSIWWwEc.mHIkBPAMZ2u.PzhKICCn6XMOJDNQiwIxJs2ms25dqPG",
+      "username": "testyy",
+      "id": 5
+    },
+    {
+      "email": "testyy1@test.com",
+      "password": "$2a$10$2.aqLQwE455.U51OhMME4u04.LSL7htoVEDeE/G4uzuPJUhIuaq1.",
+      "username": "testyy1",
+      "id": 6
     }
   ],
   "movies": [

@@ -15,42 +15,18 @@ export const AuthContext = React.createContext();
 export const SearchTermContext = React.createContext();
 
 function App() {
-  const navigate = useNavigate();
 
+  const accessToken = localStorage.getItem("accessToken");
+  const [auth, setAuth] = useState(accessToken || ""); // Ensure auth is initialized correctly
   const [movies, setMovies] = useState([]);
-  const [auth, setAuth] = useState(localStorage.getItem("accessToken"));
   const [searchTerm, setSearchTerm] = useState("");
-
+  const navigate = useNavigate();
   // Effect to fetch movies whenever auth token changes
   useEffect(() => {
-    const fetchMovies = async () => {
-      console.log("Fetching movies with token:", auth); // Log current auth token
-      try {
-        await retrieveMovies(setMovies, auth, navigate);
-        console.log("hello")
-      } catch (error) {
-        console.error("Failed to fetch movies:", error);
-      }
-    };
-
-    if (auth) {
-      fetchMovies();
-    }
-  }, [auth, navigate]);
-
-  // Effect to listen for auth changes
-  useEffect(() => {
-    const handleStorageChange = () => {
-      const token = localStorage.getItem("accessToken");
-      setAuth(token || "");
-    };
-
-    window.addEventListener("storage", handleStorageChange);
-
-    return () => {
-      window.removeEventListener("storage", handleStorageChange);
-    };
-  }, []);
+    retrieveMovies(setMovies, auth, navigate).catch((error) =>
+      console.log(error)
+    );
+  }, [auth]);
 
   return (
     <MovieContext.Provider value={{ movies, setMovies }}>
