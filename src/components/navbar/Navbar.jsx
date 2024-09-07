@@ -14,7 +14,11 @@ function Navbar() {
   const profileRef = useRef(null);
   const nameRef = useRef(null);
   const logoutButtonRef = useRef(null);
+<<<<<<< HEAD
   const user = JSON.parse(localStorage.getItem("user"))
+=======
+  const user = JSON.parse(localStorage.getItem("user")) || {};
+>>>>>>> 3f67172cc7949d390b8e58f272be9b1c54ff84bd
 
   const { setSearchTerm } = useContext(SearchTermContext);
 
