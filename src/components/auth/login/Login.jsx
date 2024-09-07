@@ -6,7 +6,6 @@ export default function Login() {
   const navigate = useNavigate();
   const { setAuth } = useContext(AuthContext);
   const [error, setError] = useState();
-  const [userDetails, setUserDetails] = useState();
 
   async function login(event) {
     event.preventDefault();
