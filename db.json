@@ -1,0 +1,197 @@
+{
+  "users": [
+    {
+      "email": "test@test.com",
+      "password": "$2a$10$.2nX.FmY100FK5Dd4JSt0uPWEczTXRE9XzLAlItGzrUW6bJHH4mAq",
+      "username": "test",
+      "id": 1
+    },
+    {
+      "email": "hello@world.com",
+      "password": "$2a$10$ILl7zfi6nWIXl5gjb0DTIOLtfKhHmStIofKgCz03LXi2S5qzomcz6",
+      "username": "helloworld",
+      "id": 2
+    },
+    {
+      "email": "testy@test.com",
+      "password": "$2a$10$YX4XYrvEDLes.CD0c1/YhuAnDp7f5P3cLL64zTRIF7roVRZfmGAdm",
+      "username": "testy",
+      "id": 3
+    },
+    {
+      "email": "tester@test.com",
+      "password": "$2a$10$KYkqTLmYWljmTA2DFwgU.O2tSqzv1s0br6bdwfFr8Ey7OSQ/akzmW",
+      "username": "tester",
+      "id": 4
+    },
+    {
+      "email": "testyy@test.com",
+      "password": "$2a$10$FjSIWWwEc.mHIkBPAMZ2u.PzhKICCn6XMOJDNQiwIxJs2ms25dqPG",
+      "username": "testyy",
+      "id": 5
+    },
+    {
+      "email": "testyy1@test.com",
+      "password": "$2a$10$2.aqLQwE455.U51OhMME4u04.LSL7htoVEDeE/G4uzuPJUhIuaq1.",
+      "username": "testyy1",
+      "id": 6
+    }
+  ],
+  "movies": [
+    {
+      "title": "Calculatoare",
+      "imageUrl": "https://picsum.photos/id/60/400/300",
+      "year": "1993",
+      "rating": "pg",
+      "category": "movie",
+      "id": "b6aa03d1-0ca9-44ac-aabf-c084b0e500fd",
+      "trending": false
+    },
+    {
+      "title": "Padure",
+      "imageUrl": "https://picsum.photos/id/10/400/300",
+      "year": "1993",
+      "rating": "pg",
+      "category": "movie",
+      "id": "fc02cae2-f187-4ac0-8a15-32a6495bceb3",
+      "trending": true
+    },
+    {
+      "id": "80d21417-54cf-4f94-8554-07a70d2b2b31",
+      "title": "The great lands",
+      "imageUrl": "https://picsum.photos/id/23/400/300",
+      "year": 1993,
+      "rating": "PG",
+      "category": "Movie",
+      "bookmark": false,
+      "trending": true
+    },
+    {
+      "id": "5e507f3c-2534-45bb-8311-6d8920b975f7",
+      "title": "The great lands",
+      "imageUrl": "https://picsum.photos/id/198/400/300",
+      "year": 1993,
+      "rating": "PG",
+      "category": "Movie",
+      "bookmark": false,
+      "trending": false
+    },
+    {
+      "id": "76bb",
+      "title": "movie",
+      "imageUrl": "https://picsum.photos/id/192/400/300",
+      "year": "2003",
+      "rating": "pg",
+      "category": "series",
+      "trending": true
+    },
+    {
+      "id": "541c",
+      "title": "The great",
+      "imageUrl": "https://picsum.photos/id/60/400/300",
+      "year": "1993",
+      "rating": "18+",
+      "category": "series",
+      "trending": false
+    },
+    {
+      "id": "6597",
+      "title": "The great",
+      "imageUrl": "https://picsum.photos/id/60/400/300",
+      "year": "1993",
+      "rating": "pg",
+      "category": "movie",
+      "trending": true
+    },
+    {
+      "id": "6ff4",
+      "title": "The great",
+      "imageUrl": "https://picsum.photos/id/60/400/300",
+      "year": "1998",
+      "rating": "pg",
+      "category": "movie",
+      "trending": false
+    },
+    {
+      "id": "6c10",
+      "title": "The great lands",
+      "imageUrl": "https://picsum.photos/id/60/400/300",
+      "year": "1",
+      "rating": "pg",
+      "category": "movie",
+      "trending": true
+    },
+    {
+      "id": "0c2d",
+      "title": "The great lands",
+      "imageUrl": "https://picsum.photos/id/60/400/300",
+      "year": "6",
+      "rating": "pg",
+      "category": "movie",
+      "trending": false
+    },
+    {
+      "id": "7cf0",
+      "title": "test",
+      "imageUrl": "https://picsum.photos/id/192/400/300",
+      "year": "2003",
+      "rating": "pg",
+      "category": "series",
+      "trending": true
+    },
+    {
+      "id": "6176",
+      "title": "The great testt3",
+      "imageUrl": "https://picsum.photos/id/90/400/300",
+      "year": "1993",
+      "rating": "pg",
+      "category": "movie",
+      "trending": false
+    },
+    {
+      "id": "f2ca",
+      "title": "The great lands test3",
+      "imageUrl": "https://picsum.photos/id/90/400/300",
+      "year": "1993",
+      "rating": "pg",
+      "category": "movie",
+      "trending": true
+    },
+    {
+      "id": "14b7",
+      "title": "testyyyyyy",
+      "imageUrl": "https://picsum.photos/id/80/400/300",
+      "year": "1993",
+      "rating": "pg",
+      "category": "series",
+      "trending": false
+    },
+    {
+      "id": "4cb3",
+      "title": "The great lands1234",
+      "imageUrl": "https://picsum.photos/id/60/400/300",
+      "year": "1",
+      "rating": "pg",
+      "category": "movie",
+      "trending": true
+    },
+    {
+      "id": "a8ba",
+      "title": "birouri",
+      "imageUrl": "https://picsum.photos/id/192/400/300",
+      "year": "2003",
+      "rating": "pg",
+      "category": "series",
+      "trending": false
+    },
+    {
+      "id": "0d79",
+      "title": "Test",
+      "imageUrl": "https://picsum.photos/id/60/400/300",
+      "year": "1234",
+      "rating": "pg",
+      "category": "movie",
+      "trending": true
+    }
+  ]
+}
