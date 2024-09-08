@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-<<<<<<< HEAD
 import Home from './components/home/home'
-=======
-import Home from "./components/home/Home";
->>>>>>> 3f67172cc7949d390b8e58f272be9b1c54ff84bd
 import MovieDetails from "./components/movie-details/MovieDetails";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import CreateMovie from "./components/create-movie/CreateMovie";

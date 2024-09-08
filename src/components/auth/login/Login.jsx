@@ -36,21 +36,14 @@ export default function Login() {
     if (response.ok) {
       localStorage.setItem("accessToken", body.accessToken);
       setAuth(body.accessToken);
-<<<<<<< HEAD
       localStorage.setItem("user", JSON.stringify(body.user));
-=======
->>>>>>> 3f67172cc7949d390b8e58f272be9b1c54ff84bd
       navigate("/");
     }
   }
 
   return (
     <form onSubmit={login}>
-<<<<<<< HEAD
       {error ? <p className="error">{error}</p> : ""}
-=======
-      {error ? <p className='error'>{error}</p> : ""}
->>>>>>> 3f67172cc7949d390b8e58f272be9b1c54ff84bd
 
       <fieldset>
         <label htmlFor="email">Email:</label>
